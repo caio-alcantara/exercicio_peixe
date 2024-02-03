@@ -23,11 +23,12 @@ function preload() {
 function create() {
     this.add.image(400, 300, "mar");
     this.add.image(400, 550, "logo").setScale(0.5);
-    peixinho = this.add.image(400, 300, "peixe").setOrigin(0.5, 0.5)
+    peixinho = this.add.image(400, 300, "peixe").setOrigin(0.5, 0.5);
     peixinho.setFlip(true, false);
 }
 
 function update() {
-
+    peixinho.x = this.input.x;
+    peixinho.y = this.input.y;
 }
 
