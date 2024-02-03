@@ -18,10 +18,16 @@ function preload() {
     this.load.image("mar", "assets/bg_azul-escuro.png");
     this.load.image("logo", "assets/logo-inteli_branco.png");
     this.load.image("peixe", "assets/peixes/baiacu.png");
+    this.load.image("alga", "assets/seaweed.png");
+
 }
 
 function create() {
     this.add.image(400, 300, "mar");
+    this.add.image(140, 380, "alga").setScale(0.25);
+    this.add.image(600, 180, "alga").setScale(0.25);
+    this.add.image(250, 100, "alga").setScale(0.25);
+    this.add.image(600, 450, "alga").setScale(0.25);
     this.add.image(400, 550, "logo").setScale(0.5);
     peixinho = this.add.image(400, 300, "peixe").setOrigin(0.5, 0.5);
     peixinho.setFlip(true, false);
