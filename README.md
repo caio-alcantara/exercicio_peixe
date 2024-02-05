@@ -3,3 +3,5 @@ Nas minhas experiências, já trabalhei bastante com a área de robótica, o que
 Entretanto, também já fiz 3/5 módulos do curso de desenvolvimento web da plataforma CursoEmVideo,
 o que com certeza facilitou bastante esse inicio, uma vez que a trindade HTML5/CSS3/Javascript é uma velha conhecida.
 Ademais, entendi todo o tutorial e tudo parece funcionar corretamente!
+
+Live site URL: https://caio-alcantara.github.io/exercicio_peixe/
