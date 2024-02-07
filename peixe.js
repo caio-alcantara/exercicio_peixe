@@ -11,7 +11,8 @@ var config = {
 };
 
 var game = new Phaser.Game(config);
-
+var xPosition;
+var xPositionNew;
 var peixinho;
 
 function preload() {
@@ -34,7 +35,25 @@ function create() {
 }
 
 function update() {
+// Armazena a posição anterior do peixinho
+var xPositionPrevious = peixinho.x;
+
+// Atualiza a posição do peixinho de acordo com a posição do cursor
+peixinho.x = this.input.x;
+peixinho.y = this.input.y;
+
+// Verifica se o peixinho está andando para a esquerda ou para a direita
+if (peixinho.x < xPositionPrevious) {
+    // Espelha a imagem do peixe horizontalmente
+    peixinho.setFlip(false, false);
+} else if (peixinho.x > xPositionPrevious) {
+    // Desfaz o espelhamento da imagem do peixe
+    peixinho.setFlip(true, false);
+}
+var yPositionPrevious;
+
     peixinho.x = this.input.x;
     peixinho.y = this.input.y;
+    
 }
 
