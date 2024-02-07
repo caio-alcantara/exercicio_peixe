@@ -37,7 +37,7 @@ function create() {
     peixinho.setFlip(true, false);
 
     musica = this.sound.add("musica");
-    musica.volume = 0.5;
+    musica.volume = 0.8;
     musica.loop = true;
     musica.play();
 }
