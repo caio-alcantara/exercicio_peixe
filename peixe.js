@@ -44,13 +44,12 @@ peixinho.y = this.input.y;
 
 // Verifica se o peixinho está andando para a esquerda ou para a direita
 if (peixinho.x < xPositionPrevious) {
-    // Espelha a imagem do peixe horizontalmente
+    // Desfaz o espelhamento da imagem do peixe
     peixinho.setFlip(false, false);
 } else if (peixinho.x > xPositionPrevious) {
-    // Desfaz o espelhamento da imagem do peixe
+    // Espelha a imagem do peixe horizontalmente
     peixinho.setFlip(true, false);
 }
-var yPositionPrevious;
 
     peixinho.x = this.input.x;
     peixinho.y = this.input.y;
