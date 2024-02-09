@@ -12,7 +12,7 @@ var config = {
 
 var game = new Phaser.Game(config);
 var xPosition;
-var xPositionNew;
+var xPositionPrevious;
 var peixinho;
 var musica;
 
@@ -44,7 +44,7 @@ function create() {
 
 function update() {
 // Armazena a posição anterior do peixinho
-var xPositionPrevious = peixinho.x;
+xPositionPrevious = peixinho.x;
 
 // Atualiza a posição do peixinho de acordo com a posição do cursor
 peixinho.x = this.input.x;
